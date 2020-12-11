@@ -1,10 +1,12 @@
 package com.br.guilherme.escola.dominio.aluno
 
 class Telefone(ddd: String?, numero: String?) {
-    val ddd: String
-    val numero: String
-    val regex1 = "\\d{2}".toRegex()
-    val regex2 = "\\d{8}|\\d{9}".toRegex()
+    var ddd: String
+        private set
+    var numero: String
+        private set
+    private val regex1 = "\\d{2}".toRegex()
+    private val regex2 = "\\d{8}|\\d{9}".toRegex()
 
     init {
         if(ddd == null || numero == null) { throw IllegalArgumentException("DDD e numero não preenchidos")}
@@ -13,4 +15,6 @@ class Telefone(ddd: String?, numero: String?) {
         this.ddd = ddd
         this.numero = numero
     }
+
+
 }

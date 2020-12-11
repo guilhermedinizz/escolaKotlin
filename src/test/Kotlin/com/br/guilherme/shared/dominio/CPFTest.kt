@@ -1,4 +1,4 @@
-package com.br.guilherme.escola.dominio.aluno
+package com.br.guilherme.shared.dominio
 
 
 import org.junit.jupiter.api.Assertions

@@ -1,5 +1,6 @@
 package com.br.guilherme.escola.dominio.aluno
 
+import com.br.guilherme.shared.dominio.CPF
 import com.br.guilherme.escola.dominio.aluno.FabricaDeAluno as FabricaDeAluno
 
 class FabricaDeAluno {

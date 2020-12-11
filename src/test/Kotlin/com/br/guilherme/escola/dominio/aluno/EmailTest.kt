@@ -18,6 +18,6 @@ internal class EmailTest{
     fun deveCriarEmails() {
         val endereco = "dinizdesousaguilherme@gmail.com"
         val email = Email(endereco)
-        Assertions.assertEquals(endereco, email.email)
+        Assertions.assertEquals(endereco, email.endereco)
     }
 }

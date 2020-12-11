@@ -1,9 +1,12 @@
 package com.br.guilherme.escola.dominio.aluno
 
 import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 
 internal class TelefoneTest {
+
+
     @Test
     fun naoDeveriaCriarTelefoneComDDDsInvalidos() {
         Assertions.assertThrows(IllegalArgumentException::class.java
